@@ -1,32 +1,28 @@
 #include<stdio.h>
-int main()
+ 
+void greet()
+
 {
-    int marks;
-    scanf("%d", &marks);
-    printf("Enter the marks: %d\n", marks);
-    
-    if(marks >= 90 && marks <= 100)
-    {
-        printf("Grade A");
-    }
-    else if(marks >= 80)
-    {
-        printf("Grade B");
-    }
-    else if(marks >= 70)
-    {
-        printf("Grade C");
-    }
-    else if(marks >= 60)
-    {
-        printf("Grade D");
-    }
-    else if(marks >= 50)
-    {
-        printf("Grade E");
-    }
-    else{
-        printf("Fail");
-    }
+
+    printf("Welcome\n");
+
+}
+
+void bye()
+
+{
+
+    printf("Thank You\n");
+}
+
+int main()
+
+{
+
+    greet();
+    greet();
+    bye();
+    greet();
+
     return 0;
 }
