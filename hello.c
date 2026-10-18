@@ -1,28 +1,31 @@
 #include<stdio.h>
- 
-void greet()
-
-{
-
-    printf("Welcome\n");
-
-}
-
-void bye()
-
-{
-
-    printf("Thank You\n");
-}
-
 int main()
-
 {
+    int a,b,c,h,d,perimeter,area;
 
-    greet();
-    greet();
-    bye();
-    greet();
+    printf("Enter the first side: ");
+    scanf("%d", &a);
+
+     printf("Enter the secound side: ");
+    scanf("%d", &b);
+
+     printf("Enter the third  side: ");
+    scanf("%d", &c);
+
+        perimeter = a+b+c;
+        printf("Perimeter is %d\n",perimeter);
+
+    printf("*****************************************************************************\n");
+
+     printf("Enter the height of the triangle: ");
+    scanf("%d", &h);
+
+     printf("Enter the base: ");
+    scanf("%d", &d);
+    
+    area = 0.5 *h*d;
+    printf("Area of the triangle is %d\n",area);
 
     return 0;
+
 }
