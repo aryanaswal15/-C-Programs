@@ -1,31 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c,h,d,perimeter,area;
+    int length,breath,area,perimeter;
 
-    printf("Enter the first side: ");
-    scanf("%d", &a);
+    printf("Enter the length:");
+    scanf("%d", &length);
 
-     printf("Enter the secound side: ");
-    scanf("%d", &b);
+    printf("Enter the breath:");
+    scanf("%d", &breath);
 
-     printf("Enter the third  side: ");
-    scanf("%d", &c);
+    perimeter = 2*(length + breath);
+    printf("Perimeter of the rectangle is %d \n", perimeter);
 
-        perimeter = a+b+c;
-        printf("Perimeter is %d\n",perimeter);
-
-    printf("*****************************************************************************\n");
-
-     printf("Enter the height of the triangle: ");
-    scanf("%d", &h);
-
-     printf("Enter the base: ");
-    scanf("%d", &d);
-    
-    area = 0.5 *h*d;
-    printf("Area of the triangle is %d\n",area);
+    area = length*breath;
+    printf("Area of rectangle is %d", area);
 
     return 0;
-
 }
